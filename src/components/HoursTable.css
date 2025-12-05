@@ -1,0 +1,122 @@
+.hours-table-container {
+  position: relative;
+  z-index: 1;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.table-title {
+  color: #fff;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+  font-weight: 600;
+}
+
+.table-wrapper {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  max-width: 95%;
+  width: 100%;
+  max-width: 1200px;
+  overflow-x: auto;
+}
+
+.hours-table {
+  width: 100%;
+  border-collapse: collapse;
+  color: #fff;
+  font-size: 1rem;
+}
+
+.hours-table thead {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.hours-table th {
+  padding: 1rem;
+  text-align: left;
+  font-weight: 600;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-size: 0.9rem;
+}
+
+.hours-table tbody tr {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  transition: background-color 0.2s ease;
+}
+
+.hours-table tbody tr:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.hours-table td {
+  padding: 0.875rem 1rem;
+}
+
+@media (max-width: 768px) {
+  .hours-table-container {
+    padding: 1rem;
+  }
+
+  .table-title {
+    font-size: 1.75rem;
+  }
+
+  .table-wrapper {
+    padding: 1rem;
+  }
+
+  .hours-table {
+    font-size: 0.875rem;
+  }
+
+  .hours-table th,
+  .hours-table td {
+    padding: 0.75rem 0.5rem;
+  }
+}
+
+.load-more-container {
+  display: flex;
+  justify-content: center;
+  padding: 1.5rem 0 0.5rem 0;
+  margin-top: 1rem;
+}
+
+.load-more-btn {
+  background: rgba(236, 72, 153, 0.2);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(236, 72, 153, 0.5);
+  color: #fff;
+  padding: 0.75rem 2rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.load-more-btn:hover {
+  background: rgba(236, 72, 153, 0.3);
+  border-color: rgba(236, 72, 153, 0.7);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(236, 72, 153, 0.4);
+}
+
+.load-more-btn:active {
+  transform: translateY(0);
+}
+
