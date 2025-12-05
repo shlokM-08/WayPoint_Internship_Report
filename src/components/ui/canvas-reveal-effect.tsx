@@ -364,7 +364,7 @@ const ShaderMaterial = ({
 
   const ref = useRef<THREE.Mesh>();
 
-  let lastFrameTime = 0;
+  const lastFrameTime = useRef(0);
 
   useFrame(({ clock }) => {
 
@@ -372,13 +372,13 @@ const ShaderMaterial = ({
 
     const timestamp = clock.getElapsedTime();
 
-    if (timestamp - lastFrameTime < 1 / maxFps) {
+    if (timestamp - lastFrameTime.current < 1 / maxFps) {
 
       return;
 
     }
 
-    lastFrameTime = timestamp;
+    lastFrameTime.current = timestamp;
 
     const material: any = ref.current.material;
 
