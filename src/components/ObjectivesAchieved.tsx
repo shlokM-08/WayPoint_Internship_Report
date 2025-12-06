@@ -1,8 +1,8 @@
 import { useState, useEffect } from 'react';
 import { createPortal } from 'react-dom';
 import './ObjectivesAchieved.css';
-import version14Image from '../assets/1.4.png';
-import version15Image from '../assets/1.5.png';
+import version14Image from '../public/assets/1.4.png';
+import version15Image from '../public/assets/1.5.png';
 import version16Image from '../public/assets/1.6.png';
 import version17Image from '../public/assets/1.7.png';
 
