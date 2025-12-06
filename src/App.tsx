@@ -1,5 +1,6 @@
 import { CanvasRevealEffect } from './components/ui/canvas-reveal-effect';
 import WorkHoursChart from './components/WorkHoursChart';
+import ObjectivesAchieved from './components/ObjectivesAchieved';
 import TaskLogs from './components/TaskLogs';
 import './App.css';
 
@@ -23,6 +24,7 @@ function App() {
       {/* Content */}
       <div className="relative z-10">
         <WorkHoursChart />
+        <ObjectivesAchieved />
         <TaskLogs />
       </div>
     </div>
