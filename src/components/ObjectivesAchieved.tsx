@@ -1,6 +1,10 @@
 import { useState, useEffect } from 'react';
 import { createPortal } from 'react-dom';
 import './ObjectivesAchieved.css';
+import version14Image from '..assets/1.4.png';
+import version15Image from '../assets/1.5.png';
+import version16Image from '../public/assets/1.6.png';
+import version17Image from '../public/assets/1.7.png';
 
 const categories = [
   'UX/UI development',
@@ -46,10 +50,10 @@ const integrationUserflow = [
 ];
 
 const versionImages = [
-  { version: '1.4', image: '/src/public/assets/1.4.png' },
-  { version: '1.5', image: '/src/public/assets/1.5.png' },
-  { version: '1.6', image: '/src/public/assets/1.6.png' },
-  { version: '1.7', image: '/src/public/assets/1.7.png' }
+  { version: '1.4', image: version14Image },
+  { version: '1.5', image: version15Image },
+  { version: '1.6', image: version16Image },
+  { version: '1.7', image: version17Image }
 ];
 
 const ObjectivesAchieved = () => {
