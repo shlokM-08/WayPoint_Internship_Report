@@ -212,7 +212,7 @@ const WorkHoursChart = () => {
         </div>
         <div className="legend-item">
           <div className="legend-dot bg-pink-500 glow-dot"></div>
-          <span>Exceeded 11 hrs</span>
+          <span>Exceeded 11 working hours</span>
         </div>
       </div>
     </div>

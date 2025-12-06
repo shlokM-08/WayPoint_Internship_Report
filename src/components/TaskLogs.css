@@ -23,7 +23,7 @@
   max-width: 1400px;
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 1rem;
 }
 
 .log-entry {
@@ -143,7 +143,7 @@
 
 .month-section {
   width: 100%;
-  margin-bottom: 1.5rem;
+  margin-bottom: 0.75rem;
 }
 
 .month-toggle-btn {
