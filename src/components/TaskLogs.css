@@ -14,7 +14,6 @@
   font-size: 2.5rem;
   margin-bottom: 2rem;
   text-align: center;
-  text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
   font-weight: 600;
 }
 
@@ -131,10 +130,7 @@
 }
 
 .log-load-more-btn:hover {
-  background: rgba(236, 72, 153, 0.3);
-  border-color: rgba(236, 72, 153, 0.7);
   transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(236, 72, 153, 0.4);
 }
 
 .log-load-more-btn:active {
@@ -166,10 +162,7 @@
 }
 
 .month-toggle-btn:hover {
-  background: rgba(236, 72, 153, 0.25);
-  border-color: rgba(236, 72, 153, 0.6);
   transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(236, 72, 153, 0.3);
 }
 
 .month-title {
