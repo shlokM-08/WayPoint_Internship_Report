@@ -54,6 +54,16 @@
   font-size: 2rem;
   font-weight: 700;
   margin-bottom: 0.25rem;
+  transition: none;
+  text-shadow: none;
+  filter: none;
+}
+
+.kpi-value:hover {
+  transition: none;
+  text-shadow: none;
+  filter: none;
+  transform: none;
 }
 
 .kpi-subtext {

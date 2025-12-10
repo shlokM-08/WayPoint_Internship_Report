@@ -102,7 +102,7 @@ const WorkHoursChart = () => {
       <div className="kpi-grid">
         <div className="kpi-card">
           <div className="kpi-label">Maximum Hours</div>
-          <div className="kpi-value text-pink-400">
+          <div className="kpi-value" style={{ color: '#60a5fa' }}>
             {maxHours} hrs
           </div>
           <div className="kpi-subtext">
@@ -111,7 +111,7 @@ const WorkHoursChart = () => {
         </div>
         <div className="kpi-card">
           <div className="kpi-label">Average Hours</div>
-          <div className="kpi-value text-blue-400">
+          <div className="kpi-value" style={{ color: '#60a5fa' }}>
             {avgHours} hrs
           </div>
           <div className="kpi-subtext">
@@ -120,7 +120,7 @@ const WorkHoursChart = () => {
         </div>
         <div className="kpi-card">
           <div className="kpi-label">Total Days</div>
-          <div className="kpi-value text-purple-400">
+          <div className="kpi-value" style={{ color: '#60a5fa' }}>
             {totalDays}
           </div>
           <div className="kpi-subtext">
