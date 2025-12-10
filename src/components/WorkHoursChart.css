@@ -42,6 +42,14 @@
   box-shadow: 0 12px 40px rgba(0, 0, 0, 0.4);
 }
 
+.kpi-card:hover .kpi-value {
+  transition: none !important;
+  text-shadow: none !important;
+  filter: none !important;
+  transform: none !important;
+  color: inherit !important;
+}
+
 .kpi-label {
   color: rgba(255, 255, 255, 0.7);
   font-size: 0.875rem;
@@ -54,16 +62,36 @@
   font-size: 2rem;
   font-weight: 700;
   margin-bottom: 0.25rem;
-  transition: none;
-  text-shadow: none;
-  filter: none;
+  transition: none !important;
+  text-shadow: none !important;
+  filter: none !important;
+  will-change: auto !important;
 }
 
-.kpi-value:hover {
-  transition: none;
-  text-shadow: none;
-  filter: none;
-  transform: none;
+.kpi-value:hover,
+.kpi-value:focus,
+.kpi-value:active {
+  transition: none !important;
+  text-shadow: none !important;
+  filter: none !important;
+  transform: none !important;
+  color: inherit !important;
+}
+
+.kpi-card .kpi-value {
+  transition: none !important;
+  text-shadow: none !important;
+  filter: none !important;
+}
+
+.kpi-card:hover .kpi-value,
+.kpi-card:focus .kpi-value,
+.kpi-card:active .kpi-value {
+  transition: none !important;
+  text-shadow: none !important;
+  filter: none !important;
+  transform: none !important;
+  color: inherit !important;
 }
 
 .kpi-subtext {
