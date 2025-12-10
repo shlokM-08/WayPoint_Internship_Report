@@ -64,20 +64,27 @@ const CustomDot = (props: any) => {
 };
 
 const WorkHoursChart = () => {
-  // Calculate max hours
-  const maxHours = useMemo(() => {
-    return Math.max(...hoursData.map((d) => d.hoursWorked));
-  }, []);
-
-  // Find the date with max hours
-  const maxHoursEntry = useMemo(() => {
-    return hoursData.find((d) => d.hoursWorked === maxHours);
-  }, [maxHours]);
-
   // Calculate average hours
   const avgHours = useMemo(() => {
     const sum = hoursData.reduce((acc, d) => acc + d.hoursWorked, 0);
     return (sum / hoursData.length).toFixed(2);
+  }, []);
+
+  // Calculate max hours
+  const maxHours = useMemo(() => {
+    const max = Math.max(...hoursData.map((d) => d.hoursWorked));
+    return max.toFixed(2);
+  }, []);
+
+  // Find the date with max hours
+  const maxHoursEntry = useMemo(() => {
+    const maxValue = Math.max(...hoursData.map((d) => d.hoursWorked));
+    return hoursData.find((d) => d.hoursWorked === maxValue);
+  }, []);
+
+  // Calculate total days
+  const totalDays = useMemo(() => {
+    return hoursData.length.toString();
   }, []);
 
   // Prepare chart data
@@ -96,7 +103,7 @@ const WorkHoursChart = () => {
         <div className="kpi-card">
           <div className="kpi-label">Maximum Hours</div>
           <div className="kpi-value text-pink-400">
-            {maxHours.toFixed(2)} hrs
+            {maxHours} hrs
           </div>
           <div className="kpi-subtext">
             on {maxHoursEntry?.date}
@@ -114,7 +121,7 @@ const WorkHoursChart = () => {
         <div className="kpi-card">
           <div className="kpi-label">Total Days</div>
           <div className="kpi-value text-purple-400">
-            {hoursData.length}
+            {totalDays}
           </div>
           <div className="kpi-subtext">
             tracked
